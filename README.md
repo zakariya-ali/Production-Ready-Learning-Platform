@@ -1,7 +1,5 @@
 # THINKOFIT - Educational Platform
 
-![THINKOFIT Banner](https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=1200&h=400)
-
 > **"Dare to Reinvent Yourself"** - A comprehensive educational platform for modern learners
 
 ## 🌟 Overview
