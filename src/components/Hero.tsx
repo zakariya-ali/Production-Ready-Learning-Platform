@@ -19,7 +19,7 @@ const Hero = () => {
           {/* Premium Badge */}
           <div className="inline-flex items-center px-8 py-4 rounded-full bg-gradient-to-r from-amber-950/30 to-yellow-950/30 border border-amber-500/20 text-amber-300 font-medium mb-12 backdrop-blur-sm">
             <Star className="w-5 h-5 mr-3 text-amber-400 fill-current" />
-            Empowering Next-Generation Leaders & Growing Community
+            Empowering Next-Generation Leaders & Growing Communities
           </div>
 
           {/* Main heading */}
