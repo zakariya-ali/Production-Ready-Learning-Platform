@@ -58,10 +58,8 @@ const Blog = () => {
             <p className="text-gray-400">Stay updated with latest insights and trends</p>
           </div>
           <button className="flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-amber-600 to-yellow-500 text-black font-semibold rounded-xl hover:from-amber-700 hover:to-yellow-600 transition-all duration-300">
-            <button className="flex items-center space-x-2 px-6 py-3 text-black font-semibold rounded-xl transition-all duration-300" style={{ backgroundColor: '#81784E' }}>
-              <span onClick={() => navigate('/blogs')}>Browse Blogs</span>
-              <ArrowRight className="w-4 h-4" />
-            </button>
+            <span onClick={() => navigate('/blogs')}>Browse Blogs</span>
+            <ArrowRight className="w-4 h-4" />
           </button>
         </div>
 
