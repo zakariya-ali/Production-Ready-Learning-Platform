@@ -29,15 +29,15 @@ const Header = () => {
       <div className="max-w-8xl mx-auto px-8 lg:px-12">
         <div className="flex justify-between items-center py-6">
           <div className="flex items-center space-x-4">
-            <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-amber-500/20 to-yellow-500/20 rounded-xl border border-amber-500/30">
-              <BrainCircuit className="w-7 h-7 text-amber-400" />
+            <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-yellow-700/20 to-yellow-800/20 rounded-xl border border-yellow-700/30">
+              <BrainCircuit className="w-7 h-7" style={{ color: '#81784E' }} />
             </div>
             <button 
               onClick={() => navigate('/')}
               className="text-3xl font-bold tracking-tight hover:opacity-80 transition-opacity duration-300"
             >
               <span className="text-white">THINK</span>
-              <span className="bg-gradient-to-r from-amber-400 to-yellow-300 bg-clip-text text-transparent">OF</span>
+              <span style={{ color: '#81784E' }}>OF</span>
               <span className="text-white">IT</span>
             </button>
           </div>
@@ -49,18 +49,18 @@ const Header = () => {
                 <button
                   key={item.name}
                   onClick={() => navigate(item.href)}
-                  className="flex items-center space-x-3 px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-amber-500/10 hover:to-yellow-500/10 transition-all duration-300 group hover:shadow-lg hover:shadow-amber-500/10 border border-transparent hover:border-amber-500/20 backdrop-blur-sm"
+                  className="flex items-center space-x-3 px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-yellow-700/10 hover:to-yellow-800/10 transition-all duration-300 group hover:shadow-lg hover:shadow-yellow-700/10 border border-transparent hover:border-yellow-700/20 backdrop-blur-sm"
                 >
-                  <item.icon className="w-5 h-5 text-amber-400 group-hover:scale-110 transition-transform duration-300" />
+                  <item.icon className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" style={{ color: '#81784E' }} />
                   <span className="font-medium tracking-wide">{item.name}</span>
                 </button>
               ) : (
                 <a
                 key={item.name}
                 href={item.href}
-                className="flex items-center space-x-3 px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-amber-500/10 hover:to-yellow-500/10 transition-all duration-300 group hover:shadow-lg hover:shadow-amber-500/10 border border-transparent hover:border-amber-500/20 backdrop-blur-sm"
+                className="flex items-center space-x-3 px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-yellow-700/10 hover:to-yellow-800/10 transition-all duration-300 group hover:shadow-lg hover:shadow-yellow-700/10 border border-transparent hover:border-yellow-700/20 backdrop-blur-sm"
               >
-                <item.icon className="w-5 h-5 text-amber-400 group-hover:scale-110 transition-transform duration-300" />
+                <item.icon className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" style={{ color: '#81784E' }} />
                 <span className="font-medium tracking-wide">{item.name}</span>
               </a>
               )
@@ -76,7 +76,8 @@ const Header = () => {
             </button>
             <button 
               onClick={() => navigate('/auth')}
-              className="px-8 py-3 bg-gradient-to-r from-amber-600 to-yellow-500 text-black font-semibold tracking-wide rounded-lg hover:from-amber-700 hover:to-yellow-600 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-amber-500/25"
+              className="px-8 py-3 text-black font-semibold tracking-wide rounded-lg transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-yellow-700/25"
+              style={{ backgroundColor: '#81784E' }}
             >
               Get Started
             </button>
@@ -130,7 +131,8 @@ const Header = () => {
               </button>
               <button 
                 onClick={() => navigate('/auth')}
-                className="w-full px-8 py-4 bg-gradient-to-r from-amber-600 to-yellow-500 text-black font-semibold tracking-wide rounded-lg hover:from-amber-700 hover:to-yellow-600 transition-all duration-300"
+                className="w-full px-8 py-4 text-black font-semibold tracking-wide rounded-lg transition-all duration-300"
+                style={{ backgroundColor: '#81784E' }}
               >
                 Get Started
               </button>

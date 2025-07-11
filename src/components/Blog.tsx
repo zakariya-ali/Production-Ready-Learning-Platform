@@ -58,6 +58,7 @@ const Blog = () => {
             <p className="text-gray-400">Stay updated with latest insights and trends</p>
           </div>
           <button className="flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-amber-600 to-yellow-500 text-black font-semibold rounded-xl hover:from-amber-700 hover:to-yellow-600 transition-all duration-300">
+          <button className="flex items-center space-x-2 px-6 py-3 text-black font-semibold rounded-xl transition-all duration-300" style={{ backgroundColor: '#81784E' }}>
             <span onClick={() => navigate('/blogs')}>Browse Blogs</span>
             <ArrowRight className="w-4 h-4" />
           </button>
@@ -77,10 +78,10 @@ const Blog = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
                 </div>
                 <div className="p-6">
-                  <span className="inline-block px-3 py-1 bg-amber-600/90 text-black rounded-lg text-xs font-bold mb-3 uppercase">
+                  <span className="inline-block px-3 py-1 text-black rounded-lg text-xs font-bold mb-3 uppercase" style={{ backgroundColor: '#81784E' }}>
                     {post.category}
                   </span>
-                  <h3 className="text-xl font-bold text-white group-hover:text-amber-400 transition-colors duration-300 leading-tight mb-2">
+                  <h3 className="text-xl font-bold text-white transition-colors duration-300 leading-tight mb-2" style={{ '--hover-color': '#81784E' } as any}>
                     {post.title}
                   </h3>
                   <p className="text-gray-400 text-sm">{post.date}</p>
@@ -101,10 +102,10 @@ const Blog = () => {
                 />
                 </div>
                 <div className="flex-1 min-w-0">
-                  <span className="text-xs text-amber-400 font-semibold uppercase tracking-wide block">
+                  <span className="text-xs font-semibold uppercase tracking-wide block" style={{ color: '#81784E' }}>
                     {post.category}
                   </span>
-                  <h4 className="text-sm font-bold text-white group-hover:text-amber-400 transition-colors duration-300 leading-tight mt-1 line-clamp-2">
+                  <h4 className="text-sm font-bold text-white transition-colors duration-300 leading-tight mt-1 line-clamp-2" style={{ '--hover-color': '#81784E' } as any}>
                     {post.title}
                   </h4>
                   <p className="text-xs text-gray-400 mt-1">{post.date}</p>
@@ -115,11 +116,11 @@ const Blog = () => {
         </div>
 
         {/* Newsletter */}
-        <div className="mt-16 bg-gradient-to-r from-amber-900/20 to-yellow-900/20 rounded-3xl p-12 text-center border border-amber-500/20">
+        <div className="mt-16 bg-gradient-to-r from-yellow-900/20 to-yellow-950/20 rounded-3xl p-12 text-center border border-yellow-700/20">
           <h3 className="text-4xl font-bold text-white mb-4">Subscribe to our Newsletter!</h3>
-          <p className="text-amber-100 mb-6 text-lg">Stay updated with our latest news and offers.</p>
-          <p className="text-amber-200 text-sm mb-8">You have to log in first to subscribe!</p>
-          <button className="inline-flex items-center space-x-3 px-8 py-4 bg-gradient-to-r from-amber-600 to-yellow-500 text-black font-semibold rounded-xl hover:from-amber-700 hover:to-yellow-600 transition-all duration-300 shadow-lg hover:shadow-amber-500/25">
+          <p className="text-yellow-100 mb-6 text-lg">Stay updated with our latest news and offers.</p>
+          <p className="text-yellow-200 text-sm mb-8">You have to log in first to subscribe!</p>
+          <button className="inline-flex items-center space-x-3 px-8 py-4 text-black font-semibold rounded-xl transition-all duration-300 shadow-lg hover:shadow-yellow-700/25" style={{ backgroundColor: '#81784E' }}>
             <MailCheck className="w-5 h-5" />
             <span>Subscribe</span>
           </button>

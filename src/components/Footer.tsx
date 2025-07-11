@@ -18,7 +18,7 @@ const Footer = () => {
             <div>
             <div className="text-4xl font-bold tracking-tight mb-6">
               <span className="text-white">THINK</span>
-              <span className="bg-gradient-to-r from-amber-400 to-yellow-300 bg-clip-text text-transparent">OF</span>
+              <span style={{ color: '#81784E' }}>OF</span>
               <span className="text-white">IT</span>
             </div>
             <p className="text-xl text-gray-300 leading-relaxed max-w-xl font-light">
@@ -29,15 +29,15 @@ const Footer = () => {
 
             <div className="flex items-center space-x-8 pt-8 mt-8 border-t border-gray-800/50">
               <div className="flex items-center space-x-3">
-                <Award className="w-5 h-5 text-amber-500" />
+                <Award className="w-5 h-5" style={{ color: '#81784E' }} />
                 <span className="text-gray-300 font-medium text-sm">Accredited Institution</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Shield className="w-5 h-5 text-amber-500" />
+                <Shield className="w-5 h-5" style={{ color: '#81784E' }} />
                 <span className="text-gray-300 font-medium text-sm">Secure Learning</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Globe className="w-5 h-5 text-amber-500" />
+                <Globe className="w-5 h-5" style={{ color: '#81784E' }} />
                 <span className="text-gray-300 font-medium text-sm">Worldwide Access</span>
               </div>
             </div>
@@ -48,7 +48,7 @@ const Footer = () => {
             <h3 className="text-2xl font-bold text-white mb-8">Get in Touch</h3>
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
-                <Mail className="w-5 h-5 text-amber-500 flex-shrink-0" />
+                <Mail className="w-5 h-5 flex-shrink-0" style={{ color: '#81784E' }} />
                 <div>
                   <div className="text-white font-semibold">Student Support</div>
                   <div className="text-gray-400">support@thinkofit.com</div>
@@ -56,7 +56,7 @@ const Footer = () => {
               </div>
               
               <div className="flex items-center space-x-4">
-                <Phone className="w-5 h-5 text-amber-500 flex-shrink-0" />
+                <Phone className="w-5 h-5 flex-shrink-0" style={{ color: '#81784E' }} />
                 <div>
                   <div className="text-white font-semibold">Help Desk</div>
                   <div className="text-gray-400">+1 (555) 987-6543</div>
@@ -64,7 +64,7 @@ const Footer = () => {
               </div>
               
               <div className="flex items-center space-x-4">
-                <MapPin className="w-5 h-5 text-amber-500 flex-shrink-0" />
+                <MapPin className="w-5 h-5 flex-shrink-0" style={{ color: '#81784E' }} />
                 <div>
                   <div className="text-white font-semibold">Main Campus</div>
                   <div className="text-gray-400">San Francisco, CA</div>

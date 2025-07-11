@@ -60,6 +60,7 @@ const Ebooks = () => {
             <p className="text-gray-400">Comprehensive guides from industry experts</p>
           </div>
           <button className="flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-amber-600 to-yellow-500 text-black font-semibold rounded-xl hover:from-amber-700 hover:to-yellow-600 transition-all duration-300">
+          <button className="flex items-center space-x-2 px-6 py-3 text-black font-semibold rounded-xl transition-all duration-300" style={{ backgroundColor: '#81784E' }}>
             <span onClick={() => navigate('/books')}>All Books</span>
             <ArrowRight className="w-4 h-4" />
           </button>
@@ -77,7 +78,7 @@ const Ebooks = () => {
                 />
                 {book.isNew && (
                   <div className="absolute top-3 left-3">
-                    <span className="px-3 py-1 bg-gradient-to-r from-amber-600 to-yellow-600 text-black rounded-lg text-xs font-bold">
+                    <span className="px-3 py-1 text-black rounded-lg text-xs font-bold" style={{ backgroundColor: '#81784E' }}>
                       NEW
                     </span>
                   </div>
@@ -91,13 +92,13 @@ const Ebooks = () => {
 
                 <div className="flex items-center space-x-1 mb-3">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-3 h-3 text-amber-400 fill-current" />
+                    <Star key={i} className="w-3 h-3 fill-current" style={{ color: '#81784E' }} />
                   ))}
                   <span className="text-xs text-gray-400 ml-2">({book.reviews})</span>
                 </div>
 
                 <div className="mt-auto">
-                  <span className="text-xl font-bold text-amber-400">£{book.price}</span>
+                  <span className="text-xl font-bold" style={{ color: '#81784E' }}>£{book.price}</span>
                 </div>
               </div>
             </div>
