@@ -58,9 +58,10 @@ const Blog = () => {
             <p className="text-gray-400">Stay updated with latest insights and trends</p>
           </div>
           <button className="flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-amber-600 to-yellow-500 text-black font-semibold rounded-xl hover:from-amber-700 hover:to-yellow-600 transition-all duration-300">
-          <button className="flex items-center space-x-2 px-6 py-3 text-black font-semibold rounded-xl transition-all duration-300" style={{ backgroundColor: '#81784E' }}>
-            <span onClick={() => navigate('/blogs')}>Browse Blogs</span>
-            <ArrowRight className="w-4 h-4" />
+            <button className="flex items-center space-x-2 px-6 py-3 text-black font-semibold rounded-xl transition-all duration-300" style={{ backgroundColor: '#81784E' }}>
+              <span onClick={() => navigate('/blogs')}>Browse Blogs</span>
+              <ArrowRight className="w-4 h-4" />
+            </button>
           </button>
         </div>
 
@@ -96,10 +97,10 @@ const Blog = () => {
               <article key={post.id} className="group flex items-center space-x-4 p-4 bg-gradient-to-br from-gray-900/30 to-black/20 rounded-2xl border border-gray-800/30 hover:border-amber-500/30 transition-all duration-300">
                 <div className="overflow-hidden rounded-xl flex-shrink-0">
                   <img 
-                  src={post.image} 
-                  alt={post.title}
+                    src={post.image} 
+                    alt={post.title}
                     className="w-16 h-16 object-cover group-hover:scale-105 transition-transform duration-300"
-                />
+                  />
                 </div>
                 <div className="flex-1 min-w-0">
                   <span className="text-xs font-semibold uppercase tracking-wide block" style={{ color: '#81784E' }}>
